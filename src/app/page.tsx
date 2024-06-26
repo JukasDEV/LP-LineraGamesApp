@@ -11,6 +11,7 @@ import TestimonyCard from "./_components/testimony-card"
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
 import Script from "next/script"
 import { Input } from "@/components/ui/input"
+import FirstSection from "./_components/first-section"
 
 
 
@@ -44,39 +45,8 @@ export default function Home() {
     </head>
     <Navbar/> {/* Inserindo a navbar no topo da página */}
       <main className="flex flex-col">
-      <section className="w-full py-20 md:py-32 bg-gray-100 dark:bg-gray-900">
-        <div className="px-4 sm:container">
-          <div className="flex flex-col sm:grid items-center gap-8 lg:grid-cols-2 px-4">
-            <div className="space-y-6 px-4">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                Alavanque seu negócio com PPB!
-              </h1>
-              <p className="text-lg text-gray-600 dark:text-gray-400 max-w-[400px] sm:max-w-[600px]">
-                Somos a solução definitiva para empreendedores, startups e empresas que desejam transformar ideias em planos de negócios sólidos. 
-              </p>
-              <div className="flex flex-col gap-3 sm:flex-row w-full">
-                <Link href="/auth/register" className="w-full">
-                  <Button variant="default" className="w-full">Começar agora</Button>
-                </Link>
-                <Link href="/auth" className="w-full">
-                  <Button variant="outline" className="w-full">Entrar</Button>
-                </Link>
-              </div>
-            </div>
-            <img
-              alt="Hero Image"
-              className="mx-auto rounded-lg shadow-lg"
-              height={400}
-              src="/assets/hero1.png"
-              style={{
-                aspectRatio: "500/300",
-                objectFit: "contain",
-              }}
-              width={600}
-            />
-          </div>
-        </div>
-      </section>
+        <FirstSection/>
+      
       <section className="w-full py-20 md:py-32">
         <div className="container px-4 md:px-6">
           <div className="space-y-8 text-center">
