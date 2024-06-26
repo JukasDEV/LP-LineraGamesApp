@@ -5,6 +5,8 @@ import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Logo } from "@/components/logo"
 import HowItWorks from "./_components/how-it-works"
 import Faq from "./_components/faq"
+import  Navbar  from "./_components/navbar"
+
 import TestimonyCard from "./_components/testimony-card"
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
 import Script from "next/script"
@@ -40,7 +42,8 @@ export default function Home() {
 
       <title>PPB</title>
     </head>
-    <main className="flex flex-col">
+    <Navbar/> {/* Inserindo a navbar no topo da página */}
+      <main className="flex flex-col">
       <section className="w-full py-20 md:py-32 bg-gray-100 dark:bg-gray-900">
         <div className="px-4 sm:container">
           <div className="flex flex-col sm:grid items-center gap-8 lg:grid-cols-2 px-4">
