@@ -27,7 +27,7 @@ export default function FirstSection(){
             }
 
             .background-animation {
-                animation: backgroundScroll 30s linear infinite;
+                animation: backgroundScroll 50s linear infinite;
                 background-size: 50%;
                 background-repeat: repeat;
             }
