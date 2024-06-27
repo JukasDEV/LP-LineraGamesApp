@@ -1,9 +1,14 @@
 import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
 
 export default function SecondSection(){
     return (
-
-    <div className="bg-foreground pb-6 sm:pb-8 lg:pb-12">
+    <motion.div 
+        className="bg-foreground pb-6 sm:pb-8 lg:pb-12"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+    >
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         <section className="flex flex-col items-center justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
             {/* <!-- conteúdo - início --> */}
@@ -47,7 +52,6 @@ export default function SecondSection(){
             {/* <!-- imagem - fim --> */}
         </section>
         </div>
-    </div>
-    
+    </motion.div>
     )
 }
