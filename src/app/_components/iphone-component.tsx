@@ -9,7 +9,7 @@ const IphoneComponent: React.FC = () => {
           <h1 className="text-4xl font-bold text-gray-900 backdrop-blur-lg rounded-lg p-2">
             Tenha seu próprio APP de análise jogos com I.A 
           </h1>
-          <p className="mt-4 text-md max-w-[720px] text-gray-600 backdrop-blur-lg rounded-lg p">
+          <p className="mt-4 text-md max-w-[720px] text-gray-600 backdrop-blur-md rounded-lg">
             Nunca foi tão facil colocar dinheiro no bolso de seus usuários.
           </p>
         </div>

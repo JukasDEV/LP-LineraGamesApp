@@ -1,42 +1,33 @@
 export default function Statistics(){
     return (
-        <div className="bg-gray-100 w-full h-[200px] flex items-center flex-col justify-center rounded-lg gap-6 absolute bottom-[-40px]">
+        <div className="max-w-[300px] sm:max-w-full h-full bg-gray-100 w-full sm:h-[200px] flex items-center flex-col justify-center rounded-lg gap-6 sm:absolute sm:bottom-[-40px] py-8">
             <span className="font-semibold text-[16px] text-gray-600 gap-2 flex items-center">
                 <span>🏆</span>  <span>Veja nossos números</span>
             </span>
-            <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0 md:divide-x">
-                <div className="flex flex-col items-center md:p-4">
-                    <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+            <div className="flex flex-col sm:grid sm:grid-cols-2 gap-8 md:grid-cols-3 md:gap-0 divide-y sm:divide-y-0 md:divide-x">
+                <div className="pt-2 sm:pt-0 flex flex-col items-center md:p-4">
+                    <div className="text-4xl font-bold text-indigo-500 sm:text-4xl md:text-5xl">
                     200
                     </div>
                     <div className="text-sm font-semibold sm:text-base">
-                    Alguma coisa
+                    Aplicativos entregues
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center md:p-4">
-                    <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
+                <div className="pt-6 sm:pt-0  flex flex-col items-center md:p-4">
+                    <div className="text-4xl font-bold text-indigo-500 sm:text-4xl md:text-5xl">
                     500+
                     </div>
                     <div className="text-sm font-semibold sm:text-base">
-                    Outra coisa
+                    Afiliados
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center md:p-4">
-                    <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
-                    1000+
+                <div className="pt-6 sm:pt-0  flex flex-col items-center md:p-4">
+                    <div className="text-4xl font-bold text-indigo-500 sm:text-4xl md:text-5xl">
+                    250.000+
                     </div>
-                    <div className="text-sm font-semibold sm:text-base">Clientes felizes</div>
-                </div>
-
-                <div className="flex flex-col items-center md:p-4">
-                    <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
-                    Alguns
-                    </div>
-                    <div className="text-sm font-semibold sm:text-base">
-                    Coffee breaks
-                    </div>
+                    <div className="text-sm font-semibold sm:text-base">Jogadores lucrando</div>
                 </div>
             </div>
         </div>
