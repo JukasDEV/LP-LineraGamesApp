@@ -1,13 +1,16 @@
+import { Button } from "@/components/ui/button";
+import IphoneComponent from "./iphone-component";
+
 export default function FirstSection(){
     return (
         <>
         <div className="w-full">
             <div className="inset-x-0 max-w-7xl mx-auto h-[1500px] lg:h-[1050px] top-0 -z-10 overflow-hidden">
                 
-                <div className="absolute w-full h-full bg-repeat bg-[length:800px] lg:bg-[length:900px] background-animation" style={{
+                <div className="w-full bg-repeat bg-[length:800px] lg:bg-[length:900px] background-animation" style={{
                     backgroundImage: "url('/background.png')",
                 }}>
-                    
+                    <IphoneComponent/>
                 </div>
             </div>
             

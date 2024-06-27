@@ -52,7 +52,6 @@ export default function Home() {
     <Navbar/> {/* Inserindo a navbar no topo da página */}
       <main className="flex flex-col">
         <FirstSection/>
-        <DietComponent/>
       </main>
     </>
   )
