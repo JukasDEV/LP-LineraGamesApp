@@ -13,7 +13,7 @@ export default function SecondSection() {
       className="bg-foreground pb-6 sm:pb-8 lg:pb-12"
       initial={{ opacity: 0.2 }}
       animate={inView ? { opacity: 1 } : {}}
-      transition={{ duration: 2 }}
+      transition={{ duration: 0.9 }}
       ref={ref}
     >
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -48,14 +48,19 @@ export default function SecondSection() {
           {/* <!-- conteúdo - fim --> */}
 
           {/* <!-- imagem - início --> */}
-          <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12 flex items-center justify-center flex-col h-full">
+          <motion.div
+            className="overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12 flex items-center justify-center flex-col h-full"
+            initial={{ x: 300 }}
+            animate={inView ? { x: 0 } : { x: 300 }}
+            transition={{ type: "spring", stiffness: 100, damping: 20 }}
+          >
             <img
               src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&q=75&fit=crop&w=1000"
               loading="lazy"
               alt="Photo by Fakurian Design"
               className="h-full w-full object-cover object-center max-h-[600px]"
             />
-          </div>
+          </motion.div>
           {/* <!-- imagem - fim --> */}
         </section>
       </div>
