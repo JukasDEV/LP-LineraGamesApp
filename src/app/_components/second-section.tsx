@@ -13,7 +13,7 @@ export default function SecondSection() {
       className="bg-foreground pb-6 sm:pb-8 lg:pb-12"
       initial={{ opacity: 0.2 }}
       animate={inView ? { opacity: 1 } : {}}
-      transition={{ duration: 2 }}
+      transition={{ duration: 1 }}
       ref={ref}
     >
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">

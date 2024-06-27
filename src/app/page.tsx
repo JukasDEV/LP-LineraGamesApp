@@ -15,6 +15,7 @@ import FirstSection from "./_components/first-section"
 import DietComponent from "./_components/iphone-component"
 import SecondSection from "./_components/second-section"
 import ThirdSection from "./_components/third-section"
+import Features from "./_components/features"
 
 export default function Home() {
   return (
@@ -52,6 +53,7 @@ export default function Home() {
         <FirstSection/>
         <SecondSection/>
         <ThirdSection/>
+        <Features/>
       </main>
     </>
   )
