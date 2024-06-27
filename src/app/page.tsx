@@ -3,12 +3,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 import { Logo } from "@/components/logo"
-import HowItWorks from "./_components/how-it-works"
 import Faq from "./_components/faq"
 import Navbar from "./_components/navbar"
-import Hero1 from "./_components/hero1"
-
-import TestimonyCard from "./_components/testimony-card"
 import { InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
 import Script from "next/script"
 import { Input } from "@/components/ui/input"
@@ -49,7 +45,7 @@ export default function Home() {
 
       <title>BetSinais</title>
     </head>
-    <Navbar/> {/* Inserindo a navbar no topo da página */}
+      <Navbar/> {/* Inserindo a navbar no topo da página */}
       <main className="flex flex-col">
         <FirstSection/>
       </main>
