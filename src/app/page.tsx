@@ -13,6 +13,8 @@ import FirstSection from "./_components/first-section"
 
 
 import DietComponent from "./_components/iphone-component"
+import SecondSection from "./_components/second-section"
+import ThirdSection from "./_components/third-section"
 
 export default function Home() {
   return (
@@ -48,6 +50,8 @@ export default function Home() {
       <Navbar/> {/* Inserindo a navbar no topo da página */}
       <main className="flex flex-col">
         <FirstSection/>
+        <SecondSection/>
+        <ThirdSection/>
       </main>
     </>
   )

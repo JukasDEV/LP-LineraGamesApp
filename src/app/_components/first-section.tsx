@@ -5,7 +5,7 @@ export default function FirstSection(){
     return (
         <>
         <div className="w-full">
-            <div className="inset-x-0 max-w-7xl mx-auto h-[1500px] lg:h-[1050px] top-0 overflow-hidden">
+            <div className="inset-x-0 max-w-7xl mx-auto pb-6 lg:h-[1050px] top-0 overflow-hidden">
                 
                 <div className="w-full bg-repeat bg-[length:800px] lg:bg-[length:900px] background-animation" style={{
                     backgroundImage: "url('/background.png')",
