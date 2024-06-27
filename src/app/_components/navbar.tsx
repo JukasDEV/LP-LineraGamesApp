@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Component() {
   return (
-    <nav className="flex items-center justify-between p-4 bg-white shadow-md">
+    <nav className="flex items-center justify-between p-4 bg-white shadow-md z-40 mb-[0px]">
       <div className="flex items-center space-x-4">
         <span className="text-2xl font-bold">Reeve Games</span>
       </div>
