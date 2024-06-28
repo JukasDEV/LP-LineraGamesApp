@@ -7,7 +7,7 @@ const IphoneComponent: React.FC = () => {
       <div className="flex flex-col items-center py-8 min-h-screen bg-transparent max-w-[720px]">
         <div className="text-center max-w-[720px]">
           <h1 className="text-4xl font-bold text-gray-900 backdrop-blur-lg rounded-lg p-2">
-            Tenha seu próprio APP ou Sala de Sinais com a maior qualidade e o melhor preço do mercado
+            Tenha sua própria estrutura de IGaming com a maior qualidade e o melhor preço do mercado
           </h1>
           <p className="mt-4 text-md max-w-[720px] text-gray-600 backdrop-blur-lg rounded-lg p-2">
             Nunca foi tão fácil colocar dinheiro no bolso de seus usuários.

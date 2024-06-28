@@ -10,7 +10,7 @@ export default function ThirdSection(){
             <div className="flex flex-col justify-between xl:w-5/12">
                 <div></div>
 
-                <div className="sm:text-center lg:py-12 lg:text-left xl:py-24 py-6">
+                <div className="sm:text-center lg:py-12 lg:text-right xl:py-24 py-6">
                     <p className="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">
                         Sua estrutura com a sua cara!
                     </p>
@@ -23,7 +23,7 @@ export default function ThirdSection(){
                         Selecione os jogos que deseja em seu aplicativo e as condições de análise e enviaremos as melhores entradas ao longo do dia.
                     </p>
 
-                    <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
+                    <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-end">
                     <Button
                         variant={"outline"}
                         onClick={() => {}}

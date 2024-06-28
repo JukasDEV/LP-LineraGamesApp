@@ -51,6 +51,7 @@ export default function Home() {
 
       <title>BetSinais</title>
     </head>
+    <body className="!overflow-x-hidden">
       <Navbar/> {/* Inserindo a navbar no topo da página */}
       <main className="flex flex-col items-center">
         <FirstSection/>
@@ -71,6 +72,7 @@ export default function Home() {
         <Faq/>
         <Footer/>
       </main>
+    </body>
     </>
   )
 }

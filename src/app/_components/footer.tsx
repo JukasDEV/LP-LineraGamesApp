@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         <div className="py-8 text-center text-sm text-gray-400">
-          © 2023 - Lelek Corp. Todos os direitos reservados.
+          © 2024 - Reeve. Todos os direitos reservados.
         </div>
       </footer>
     </div>

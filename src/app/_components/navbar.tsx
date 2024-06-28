@@ -11,15 +11,15 @@ export default function Component() {
         <span className="text-2xl font-bold">Reeve Games</span>
       </div>
       <div className="flex items-center space-x-6">
-        <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition duration-300 transform hover:scale-105">
+        <a href="#" className="hidden sm:flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition duration-300 transform hover:scale-105">
           <span role="img" aria-label="camera">📸</span>
           <span>Funcionalidades</span>
         </a>
-        <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition duration-300 transform hover:scale-105">
+        <a href="#" className="hidden sm:flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition duration-300 transform hover:scale-105">
           <span role="img" aria-label="price tag">🏷️</span>
           <span>Preço</span>
         </a>
-        <a href="#" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition duration-300 transform hover:scale-105">
+        <a href="#" className="hidden sm:flex items-center space-x-1 text-gray-700 hover:text-blue-600 transition duration-300 transform hover:scale-105">
           <span role="img" aria-label="health professional">👩‍⚕️</span>
           <span>Quem Somos</span>
         </a>

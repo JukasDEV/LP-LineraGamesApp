@@ -11,10 +11,8 @@ export default function Features() {
           </h2>
 
           <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-            consequuntur atque magni esse officia distinctio illum, quod
-            explicabo repellendus molestiae numquam nostrum in incidunt commodi
-            ad impedit rem officiis? Est!
+            Nossos serviços são feitos para você que deseja aumentar suas vendas
+            e ter um suporte de qualidade.
           </p>
         </div>
 
@@ -38,18 +36,11 @@ export default function Features() {
             </div>
 
             <h3 className="mb-2 text-center text-lg font-semibold md:text-xl">
-              Mais vendas
+              Alta assertividade
             </h3>
             <p className="mb-2 text-center text-gray-500">
-              Filler text is dummy text which has no meaning however looks very
-              similar to real text.
+              Nossas análises passam dos 80% de assertividade em todos os jogos.
             </p>
-            <button
-              onClick={() => {}}
-              className="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700"
-            >
-              Saiba mais
-            </button>
           </div>
 
           <div className="flex flex-col items-center">
@@ -164,12 +155,8 @@ export default function Features() {
               Suporte 24/7
             </h3>
             <p className="mb-2 text-center text-gray-500">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-              consequatur nam cupiditate.
+              Nosso suporte está disponível 24 horas por dia, 7 dias por semana.
             </p>
-            <button className="font-bold text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">
-              Saiba mais
-            </button>
           </div>
 
           <div className="flex flex-col items-center">

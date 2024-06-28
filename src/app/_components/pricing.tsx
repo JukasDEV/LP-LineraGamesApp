@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Pricing(){
     return (
         <>
@@ -403,12 +405,12 @@ export default function Pricing(){
 
       <div className="text-center text-sm text-gray-500 sm:text-base">
         Ficou com alguma dúvida{" "}
-        <button
-          onClick={() => {}}
+        <Link
+          href="https://wa.me/"
           className="text-gray-500 underline transition duration-100 hover:text-indigo-500 active:text-indigo-600"
         >
           Fale com nossa equipe
-        </button>
+        </Link>
         .
       </div>
     </div>
