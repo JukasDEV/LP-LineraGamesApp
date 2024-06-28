@@ -58,7 +58,7 @@ import { prisma } from '@/services/database';
  *                   description: Mensagem de erro explicando o problema interno.
  */
 
-const resend = new Resend(process.env.EMAIL_API_KEY);
+// const resend = new Resend(process.env.EMAIL_API_KEY);
 
 export async function POST(req: NextRequest) {
     try {
@@ -79,14 +79,14 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: "Email do destinatário não fornecido." }, { status: 400 });
       }
   
-      const data = await resend.emails.send({ 
-        from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM_EMAIL}>`,
-        to: [userEmail],
-        subject: 'Bem Vindo ao PlanProBusiness',
-        react: KoalaWelcomeEmail({ userFirstname: user?.name || 'Visitante' }),
-      });
+      // const data = await resend.emails.send({ 
+      //   from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM_EMAIL}>`,
+      //   to: [userEmail],
+      //   subject: 'Bem Vindo ao PlanProBusiness',
+      //   react: KoalaWelcomeEmail({ userFirstname: user?.name || 'Visitante' }),
+      // });
   
-      return NextResponse.json({ data });
+      return NextResponse.json({ });
   
     } catch (e) {
         //@ts-ignore

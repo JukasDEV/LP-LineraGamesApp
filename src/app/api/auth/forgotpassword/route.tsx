@@ -1,7 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
 import jwt from 'jsonwebtoken'; 
-import DropboxResetPasswordEmail from '@/email-templates/resetpassword-template';
 import { prisma } from "@/services/database";
 
 
@@ -63,53 +61,53 @@ import { prisma } from "@/services/database";
 
 
 
-const resend = new Resend(process.env.EMAIL_API_KEY);
+// const resend = new Resend(process.env.EMAIL_API_KEY);
 
 export async function POST(req: NextRequest) {
     try {
-        const body = await req.json();
+        // const body = await req.json();
         
-        const { userEmail } = body;
+        // const { userEmail } = body;
 
-        const user = await prisma.users.findUnique({
-            where: {
-                email: userEmail,
-            },
-        });
+        // const user = await prisma.users.findUnique({
+        //     where: {
+        //         email: userEmail,
+        //     },
+        // });
 
-        if (!user) {
-            return NextResponse.json({ error: "Email Não Cadastrado." }, { status: 404 });
-        }
+        // if (!user) {
+        //     return NextResponse.json({ error: "Email Não Cadastrado." }, { status: 404 });
+        // }
         
-        const resetPasswordToken = jwt.sign(
-            { email: userEmail },
-        //@ts-ignore
-            process.env.JWT_SECRET ,
-            { expiresIn: '20m' } 
-        );
+        // const resetPasswordToken = jwt.sign(
+        //     { email: userEmail },
+        // //@ts-ignore
+        //     process.env.JWT_SECRET ,
+        //     { expiresIn: '20m' } 
+        // );
 
-        // Construa o link de redefinição de senha com o token
-        const resetPasswordLink = `https://plan-pro-business.vercel.app/reset-password/${resetPasswordToken}`;
+        // // Construa o link de redefinição de senha com o token
+        // const resetPasswordLink = `https://plan-pro-business.vercel.app/reset-password/${resetPasswordToken}`;
 
-        if (!userEmail) {
-            return NextResponse.json({ error: "Email do destinatário não fornecido." }, { status: 400 });
-        }
-
-
+        // if (!userEmail) {
+        //     return NextResponse.json({ error: "Email do destinatário não fornecido." }, { status: 400 });
+        // }
 
 
-        // Envia o e-mail de redefinição de senha
-        const data = await resend.emails.send({
-            from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM_EMAIL}>`,
-            to: [userEmail],
-            subject: 'Redefina sua senha PlanProBusiness',
-            react: DropboxResetPasswordEmail({
-                userFirstname: user?.name || 'Usuário',
-                resetPasswordLink: resetPasswordLink,
-            }),
-        });
 
-        return NextResponse.json({ data });
+
+        // // Envia o e-mail de redefinição de senha
+        // const data = await resend.emails.send({
+        //     from: `${process.env.EMAIL_FROM_NAME} <${process.env.EMAIL_FROM_EMAIL}>`,
+        //     to: [userEmail],
+        //     subject: 'Redefina sua senha PlanProBusiness',
+        //     react: DropboxResetPasswordEmail({
+        //         userFirstname: user?.name || 'Usuário',
+        //         resetPasswordLink: resetPasswordLink,
+        //     }),
+        // });
+
+        return NextResponse.json({});
 
     } catch (e) {
         //@ts-ignore
