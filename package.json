@@ -107,7 +107,8 @@
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.0",
     "xml2js": "^0.6.2",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "framer-motion":"11.2.12"
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",
