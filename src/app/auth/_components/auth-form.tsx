@@ -31,7 +31,7 @@ export default function AuthForm() {
                 Cookies.set('userid', response.data.userid, {expires: 84600/2})
                 toast({
                     title: 'Sucesso!',
-                    description: 'Aproveite o PPB!',
+                    description: 'Aproveite o Betsinais!',
                     duration: 5000,
                 })
                 setIsLoading(false)
@@ -64,7 +64,7 @@ export default function AuthForm() {
                 <div className="mx-auto w-[350px] space-y-6">
                     <div className="space-y-2 text-center">
                         <h1 className="text-3xl font-bold">Entrar</h1>
-                        <p className="text-gray-500 dark:text-gray-400">Preencha suas credenciais para acessar o PPB.</p>
+                        <p className="text-gray-500 dark:text-gray-400">Preencha suas credenciais para acessar o BetSinais.</p>
                     </div>
 
                     <form className="space-y-4" onSubmit={handleSubmit}>

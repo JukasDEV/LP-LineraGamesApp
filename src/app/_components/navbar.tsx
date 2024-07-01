@@ -3,6 +3,7 @@
 import { Button as UIButton } from "@/components/ui/button";
 import { Button as NextUIButton } from "@nextui-org/react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Component() {
   return (
@@ -25,15 +26,19 @@ export default function Component() {
         </a>
       </div>
       <div className="flex items-center space-x-4">
-        <UIButton className="bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300 transform hover:scale-105">
-          Assinar agora
-        </UIButton>
-        <NextUIButton
-          className="border border-blue-600 text-blue-600 px-4 py-2 rounded-full transition duration-300 transform hover:scale-105 hover:bg-blue-600 hover:text-white"
-          // auto
-        >
-          Login
-        </NextUIButton>
+        <Link href="#plans">
+          <UIButton className="bg-blue-600 text-white px-4 py-2 rounded-full transition duration-300 transform hover:scale-105">
+            Assinar agora
+          </UIButton>
+        </Link>
+        <Link href="/auth">
+          <NextUIButton
+            className="border border-blue-600 text-blue-600 px-4 py-2 rounded-full transition duration-300 transform hover:scale-105 hover:bg-blue-600 hover:text-white"
+            // auto
+          >
+            Login
+          </NextUIButton>
+        </Link>
       </div>
     </nav>
   );

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Statistics from "./statistics";
+import Link from "next/link";
 
 const IphoneComponent: React.FC = () => {
   return (
@@ -13,7 +14,11 @@ const IphoneComponent: React.FC = () => {
             Nunca foi tão fácil colocar dinheiro no bolso de seus usuários.
           </p>
         </div>
-        <Button className="mt-8 bg-blue-600 text-white p-6 font-bold rounded-full">Assinar agora</Button>
+        <Link href="#plans">
+          <Button className="mt-8 bg-blue-600 text-white p-6 font-bold rounded-full">
+            Assinar agora
+          </Button>
+        </Link>
         <div className="relative mt-12 flex w-full flex-col items-center justify-center">
           <div className="gap-6 flex w-full items-center justify-center">
             <div className="flex flex-col items-center w-full justify-center">
